@@ -25,6 +25,7 @@ public class CentralizedQueue{
         else{
             queueNumber.add(queueNumber.getLast() + 1);
         }
+        System.out.println("Queue number " + queueNumber.getLast() + " obtained.");
         addCounter++;
     }
     public synchronized void removeQueueNumber(int num){
@@ -36,6 +37,7 @@ public class CentralizedQueue{
         }
         else{
             queueNumber.remove(Integer.valueOf(num));
+            System.out.println("Queue number " + num + " removed.");
             removeCounter++;
         }
     }
@@ -83,7 +85,7 @@ public class CentralizedQueue{
     
         // Make sure firstIndex is valid for subList
         if (firstIndex < 0 || firstIndex >= queueNumber.size()) {
-            System.out.println("Invalid first index calculated: " + firstIndex);
+            //System.out.println("Invalid first index calculated: " + firstIndex);
             return;
         }
     
@@ -97,6 +99,7 @@ public class CentralizedQueue{
         for (int i = 0; i < count; i++) {
             queueNumber.add(firstIndex + i, num + i);
         }
+        System.out.println("Reset from queue " + num +  ".");
     }
 
     // List current queued number

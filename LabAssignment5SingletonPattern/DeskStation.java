@@ -15,16 +15,18 @@ public class DeskStation{
         deskStation3.removeQueueNumber(4);
         //deskStation3.removeQueueNumber(5);
         //deskStation3.removeQueueNumber(6);
-        deskStation2.reset(6);
+        deskStation2.reset(4);
 
         
         deskStation3.obtainQueueNumber();
         
         //System.out.println(deskStation1.getAddCounter());
         //System.out.println(deskStation2.getRemoveCounter());
-
+        System.out.println("\nDeskStation 1");
         deskStation1.currentQueuedNumber();
+        System.out.println("DeskStation 2");
         deskStation2.currentQueuedNumber();
+        System.out.println("DeskStation 3");
         deskStation3.currentQueuedNumber();
     }
 }
