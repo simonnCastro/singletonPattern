@@ -23,9 +23,9 @@ public class CentralizedQueue{
             queueNumber.add(1);
         }
         else{
-            queueNumber.add(queueNumber.getLast() + 1);
+            queueNumber.add(queueNumber.get(queueNumber.size()-1) + 1);
         }
-        System.out.println("Queue number " + queueNumber.getLast() + " obtained.");
+        System.out.println("Queue number " + queueNumber.get(queueNumber.size()-1) + " obtained.");
         addCounter++;
     }
     public synchronized void removeQueueNumber(int num){
