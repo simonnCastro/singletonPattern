@@ -13,15 +13,15 @@ public class DeskStation{
         
         deskStation3.removeQueueNumber(3);
         deskStation3.removeQueueNumber(4);
-        deskStation3.removeQueueNumber(5);
-        deskStation3.removeQueueNumber(6);
-        deskStation2.reset(5);
+        //deskStation3.removeQueueNumber(5);
+        //deskStation3.removeQueueNumber(6);
+        deskStation2.reset(6);
 
         
-        //deskStation3.obtainQueueNumber();
+        deskStation3.obtainQueueNumber();
         
-        System.out.println(deskStation1.getAddCounter());
-        System.out.println(deskStation2.getRemoveCounter());
+        //System.out.println(deskStation1.getAddCounter());
+        //System.out.println(deskStation2.getRemoveCounter());
 
         deskStation1.currentQueuedNumber();
         deskStation2.currentQueuedNumber();
